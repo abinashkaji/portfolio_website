@@ -3,7 +3,7 @@
 
 A simple portfolio website to showcase your work and projects. <a href="https://github.com/abinashkaji/portfolio_website" target="_blank">Click here to visit</a>
 <div align="center">
-  <a href="https://basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
+  <a href="https://basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /> Abiansh Basnet</a>
 </div>
 
 <br/>
