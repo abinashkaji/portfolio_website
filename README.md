@@ -2,7 +2,7 @@
 # My Portfolio Website
 
 <<<<<<< HEAD
-A simple portfolio website to showcase your work and projects. <a href="https://muhammadAbinash 17.github.io/simple-portfolio-website" target="_blank">Click here to visit</a>
+A simple portfolio website to showcase your work and projects. <a href="https:basnetabinash.ocm.np" target="_blank">Click here to visit</a>
 <div align="center">
   <a href="https://muhammadAbinash 17.github.io/simple-portfolio-website" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
 =======
