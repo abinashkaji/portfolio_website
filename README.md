@@ -2,7 +2,7 @@
 # My Portfolio Website
 
 < HEAD>
-A simple portfolio website to showcase your work and projects. <a href="https:www.basnetabinash.com.np" target="_blank">Click here to visit</a>
+A simple portfolio website to showcase your work and projects. <a href="www.basnetabinash.com.np" target="_blank">Click here to visit</a>
 <div align="center">
   <a href="www.basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
 =======
