@@ -31,6 +31,96 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="js/nav.js"></script>
+    <style>
+        body, html {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+        #scrollingText {
+          font-size: 20px;
+          padding: 0px;
+          width: 100%;
+          height: 50px;
+          overflow: hidden;
+          overflow-x: hidden;
+        }
+        .scrolling-text {
+            position: absolute;
+            white-space: nowrap;
+            overflow-x: hidden;
+            animation: scrollRightToLeft 13s linear infinite;
+          }
+        
+          @keyframes scrollRightToLeft {
+            0% {
+                transform: translateX(-100%);
+              }
+            5% {
+              transform: translateX(100%);
+            }
+            100% {
+              transform: translateX(-100%);
+            }
+
+          }
+
+
+          #typing-text {
+            display: inline-block;
+            white-space: wrap;
+            overflow: hidden;
+            border-right: .15em solid orange; /* typing cursor */
+            animation: blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+       
+        
+
+
+
+
+
+
+
+        #typing-container {
+            font-family: monospace; /* Ensure consistent character width for accurate cursor positioning */
+        }
+        
+        .typing-text {
+            display: inline-block;
+            white-space: pre-wrap;
+            overflow: hidden;
+            border-right: .15em solid orange; /* typing cursor */
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: orange }
+        }
+        
+
+
+
+
+
+
+
+
+      </style>
 </head>
 
 <body>
@@ -85,8 +175,8 @@
                     </div>
                     <div class="paragraph mx-auto mt-2">
                         6+ years of experience in engineering. Innovative and analytical IT engineer with a graduate degree in Information and Communication Engineering, who loves to thrives on solving complex analytical problems, proficient networking and security implementation. 
-                        <a href="https://www.linkedin.com/in/abinash-basnet/" >Linkedin </a><a href="https://scholar.google.com/citations?user=PtKNPQYAAAAJ"> Google Scholar </a>
-                        <a href="https://www.researchgate.net/profile/Abinash-Basnet/stats">Researchgate</a> <a href="https://github.com/abinashkaji/"> Github </a>
+                        <br><a href="https://www.linkedin.com/in/abinash-basnet/" > Linkedin </a> &nbsp <a href="https://scholar.google.com/citations?user=PtKNPQYAAAAJ">  Google Scholar </a>
+                        &nbsp<a href="https://www.researchgate.net/profile/Abinash-Basnet/stats"> Researchgate </a>&nbsp <a href="https://github.com/abinashkaji/"> Github </a>
                         </div>
                     <a type="button" class="section-2-button fw-bold">Read More</a>
                 </div>
@@ -123,21 +213,21 @@
         <!-- SECTION NO 4 -->
         <section class="container-fluid section-4">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="section-4-left text-center text-lg-end pe-0 pe-lg-5">
                         <span class="section-4-heading text__light">I</span>
                         <span class="section-4-heading text__light">Love </span>
                         <span class="section-4-heading-bold fw-bolder">Learning</span>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="section-4-right text-center text-lg-start">
-                        <div class="sec4-blank"></div>
-                        <div class="sec4-text">
-                            Experience :Senior Engineer, Nepal Telecom, Apr 2022 - 
-                            EDUCATION: Master of Science in Information and Communication Engineering Feb’13 – Jan’16
-                            Achievements: • CompTIA Security+ certified certification • CCNA certification • AWS Cloud Technical Essentials • ISC2 CC certification • Completed Linux security and hardening training course • Splunk core certification • IDS/ IPS course • Python automation course 
-                            Work with • Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker, IDS/IPS, Git, Bash scripting, SQL, Python, Matlab, Tableau and many more.
+                        <div class="sec3-blank"></div>
+                        <div class="sec6-text">
+                            Experience: Engineer, Nepal Telecom, Feb'17-<br>  
+                            EDUCATION: MSc. in Information and Communication Engineering, Jan'16<br>
+                            Achievements: • CompTIA Security+ certified certification • CCNA certification <br>• AWS Cloud Technical Essentials • Completed Linux security and hardening course<br>• ISC2 CC certification • Splunk core certification • IDS/ IPS course • Python automation 
+                            <br>Experience in • Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker,<br> IDS/IPS, Git, Bash scripting, SQL, Python, Matlab, Tableau and many more.
 
                         </div>
                         <div class="section-4-button">
@@ -158,8 +248,7 @@
             <div class="row">
                 <div class="col">
                     <div class="section-5-text text-center mx-auto">
-                        We Design People Inspired Experiences That Create Positive Change In People's Lives.
-                    </div>
+                        I Craft Personally-Inspired Experiences That Ignite Positive Transformations In People's Lives.                    </div>
                     <div class="section-5-icon text-center">
                         <i class="bi bi-chevron-double-down sec5-icon"></i>
                     </div>
@@ -370,7 +459,7 @@
                                 <div class="card-circle-icon"><i class="fa fa-map-signs" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Address</div>
-                            <div class="card-para">Street No ...</div>
+                            <div class="card-para">Springfield, OH</div>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -383,8 +472,7 @@
                                 <div class="card-circle-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Contact Number</div>
-                            <div class="card-para"><a class="card-link" href="https://wa.me/+92xxxxxxxxxx">+92xxx
-                                    xxxxxxx</div></a>
+                            <div class="card-para"><a class="card-link" href="https://wa.me/+1614779xxxx">+1-614990xxxx</div></a>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -398,7 +486,7 @@
                             </div>
                             <div class="card-heading">Email Address</div>
                             <div class="card-para"><a class="card-link"
-                                    href="mailto:email@example.com">email@example.com</div></a>
+                                    href="mailto:abinashkaji@gmail.com">Abinash</div></a>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -411,7 +499,7 @@
                                 <div class="card-circle-icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
                             </div>
                             <div class="card-heading">Website</div>
-                            <div class="card-para"><a class="card-link" href="#">yoursite.com</a></div>
+                            <div class="card-para"><a class="card-link" href="https://www.basnetabinash.com.np">basnetabinash.com</a></div>
                         </div>
                         <!-- <div class="card-footer"></div> -->
                     </div>
@@ -442,17 +530,15 @@
                 </div>
             </div>
         </section>
-
-
         <!-- SECTION NO 7 -->
         <section class="container-fluid section-7">
             <div class="row section-7-inner mx-auto text-center">
                 <div class="col">
                     <div class="section-7-text">
-                        We want to stay in touch with you! Please follow us on social media so we can keep in touch.
+                        I want to stay in touch with you! Please follow me on social media so I can keep in touch.
                     </div>
                     <div class="section-7-icons">
-                        <a href="#" class="social-icons"><i class="bi bi-facebook icons"></i></a>
+                        <a href="https://www.facebook.com/abinashkaji" class="social-icons"><i class="bi bi-facebook icons"></i></a>
                         <a href="#" class="social-icons"><i class="bi bi-twitter icons"></i></a>
                         <a href="#" class="social-icons"><i class="bi bi-instagram icons"></i></a>
                         <a href="#" class="social-icons"><i class="bi bi-linkedin icons"></i></a>
@@ -464,45 +550,103 @@
 
         <!-- SECTION NO 8 -->
         <footer class="container-fluid footer">
-            <div class="row section-footer-inner mx-auto">
-                <div class="col-sm-4">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-5 mt-sm-0">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
-                <div class="col-sm-4 mt-5 mt-sm-0">
-                    <div class="footer-headline">
-                        Headline
-                    </div>
-                    <div class="footer-text">
-                        Sample text
-                    </div>
-                </div>
+            <div class="section-footer-inner">
+                <span id="typing-text"></span>
             </div>
+            <div class="row section-footer-inner mx-auto">
+                <div id="typing-container"></div>
+            </div>
+
 
             <!-- Divider -->
             <hr style="border-bottom: 1px solid #FFFFFF;">
 
             <div class="row section-footer-inner">
                 <div class="col">
-                    <div class="footer-copyright text-center mt-2">
-                        Footer Text
+                    <div class="scrolling-text text-center" id="scrollingText">
+                        "Alone we can do so little; together we can do so much." - Helen Keller
+
                     </div>
                 </div>
             </div>
         </footer>
     </main>
+    <script>
+        const sentences = [
+                "Alone we can do so little; together we can do so much. - Helen Keller",
+                "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+                "Believe you can and you're halfway there. - Theodore Roosevelt",
+                "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+                "It does not matter how slowly you go as long as you do not stop. - Confucius",
+                "The only way to do great work is to love what you do. - Steve Jobs",
+                "In the middle of difficulty lies opportunity. - Albert Einstein",
+                "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+                "You are never too old to set another goal or to dream a new dream. - C.S. Lewis",
+                "Failure is the condiment that gives success its flavor. - Truman Capote",
+                "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful. - Albert Schweitzer",
+                "The only way to achieve the impossible is to believe it is possible. - Charles Kingsleigh",
+                "You miss 100% of the shots you don't take. - Wayne Gretzky",
+                "Don't watch the clock; do what it does. Keep going. - Sam Levenson",
+                "Dream big and dare to fail. - Norman Vaughan",
+                "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+                "It does not matter how slowly you go as long as you do not stop. - Confucius"
+        ];
+      
+        let index = 0;
+        const scrollingText = document.getElementById('scrollingText');
+      
+        function scrollText() {
+          scrollingText.innerText = sentences[index];
+          index = (index + 1) % sentences.length;
+          setTimeout(scrollText, 13000); // 5 second pause
+        }
+      
+
+        scrollText();
+        var textToType = "Abinash Basnet, Senior Engineer, Nepal Telecom. EDUCATION: MSc. in Information and Communication Engineering (Jan'16). Achievements: • CompTIA Security+ certification • CCNA certification • AWS Cloud Technical Essentials • Completed Linux security and hardening course • ISC2 CC certification • Splunk core certification • IDS/ IPS course • Python automation Experience in • Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker, IDS/IPS, Tableau, Git, Bash scripting, SQL, Python, Matlab and many more.";
+        continuousTypeWriter(textToType);
+
+        function continuousTypeWriter(textToType) {
+            typeWriter(textToType, 0, function() {
+                document.getElementById("typing-text").innerHTML="";                
+                continuousTypeWriter(textToType); // Rerun typeWriter when typing animation completes
+            });
+        }        
+
+        function typeWriter(text, i, typingCallback) {
+            let lbreak=0
+            var typingText = document.getElementById("typing-text");
+            if (i < text.length) {   
+                typingText.innerHTML += text.charAt(i);
+                i++;
+                if (typingText.offsetWidth < typingText.scrollWidth) {
+                    typingText.innerHTML = typingText.innerHTML.slice(0, -1); // Remove the last character
+                    typingText.innerHTML += "<br>"; // Add line break
+                }
+
+                /*
+                if (i%160<6 &&  [',', '.', ' ','•'].includes(text.charAt(i)) && Math.abs(lbreak-i)>30){                
+                    typingText.innerHTML = typingText.innerHTML.slice(0, -1); // Remove the "|" character
+                    document.getElementById("typing-text").innerHTML += "<br>";                        
+                    lbreak=i;
+                    }*/
+                
+                    setTimeout(function() { typeWriter(text, i, typingCallback);
+                cursorPosition.style.display = "none";  
+                }, 50);
+
+            } else {
+
+//                clearInterval(interval); // Stop the interval loop when typing is complete
+                typingCallback(); // Invoke callback function when typing is complete
+      //          setTimeout(typeWriter, 10000); // 5 second pause
+
+            }
+
+        }
+
+        
+      </script>
 </body>
 
 </html>
