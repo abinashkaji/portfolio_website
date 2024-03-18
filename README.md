@@ -14,7 +14,7 @@ A simple portfolio website to showcase your work and projects. <a href="www.basn
 A simple portfolio website to showcase your work and projects. <a href="https://github.com/abinashkaji/portfolio_website" target="_blank">Click here to visit</a>
 <div align="center">
   <a href="https://basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /> Abiansh Basnet</a>
->>>>>>> e61baa063247d1a6d5b878268a090b2fdb304376
+>>>>>>> 
 </div>
 
 <br/>
@@ -52,4 +52,3 @@ Run this command to clone the repository:
 
 =======
     git clone https://github.com/abinashkaji/portfolio_website.git
->>>>>>> e61baa063247d1a6d5b878268a090b2fdb304376
