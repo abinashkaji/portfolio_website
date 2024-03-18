@@ -1,23 +1,11 @@
 
 # My Portfolio Website
 
-< HEAD
-< HEAD>
 A simple portfolio website to showcase your work and projects. <a href="https://https://www.basnetabinash.com.np" target="_blank">Click here to visit</a>
-=======
-<head>
-A simple portfolio website to showcase your work and projects. <a href="www.basnetabinash.com.np" target="_blank">Click here to visit</a>
-> 
-<div align="center">
-  <a href="https://https://www.basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
-=======
-A simple portfolio website to showcase your work and projects. <a href="https://github.com/abinashkaji/portfolio_website" target="_blank">Click here to visit</a>
-<div align="center">
-  <a href="https://basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /> Abiansh Basnet</a>
->>>>>>> 
-</div>
 
-<br/>
+A simple portfolio website to showcase your work and projects. <a href="www.basnetabinash.com.np" target="_blank">Click here to visit</a>
+<div align="center">
+  <a href="https://https://www.basnetabinash.com.np" target="_blank"><img alt="basnetabinash.com.np website screenshot" src="./screenshots/Portfolio-Websites.png" /></a>
 
 ## **Built With**
 
@@ -46,9 +34,4 @@ Clone down this repository. You will need `git` installed globally on your machi
 ## 🛠 Setup Instructions
 
 Run this command to clone the repository: 
-
-</ head>
-    git clone https://github.com/abinashkaji
-
-=======
     git clone https://github.com/abinashkaji/portfolio_website.git
