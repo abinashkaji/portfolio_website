@@ -64,61 +64,16 @@
           }
 
 
-          #typing-text {
-            display: inline-block;
-            white-space: wrap;
-            overflow: hidden;
-            border-right: .15em solid orange; /* typing cursor */
-            animation: blink-caret .75s step-end infinite;
+          .sentence {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
         }
         
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange }
-        }
-       
-        
-
-
-
-
-
-
-
-        #typing-container {
-            font-family: monospace; /* Ensure consistent character width for accurate cursor positioning */
-        }
-        
-        .typing-text {
-            display: inline-block;
-            white-space: pre-wrap;
-            overflow: hidden;
-            border-right: .15em solid orange; /* typing cursor */
-            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: orange }
-        }
-        
-
-
-
-
-
-
-
+        .sentence.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }          
 
       </style>
 </head>
@@ -171,18 +126,21 @@
             <div class="row">
                 <div class="col text-center">
                     <div class="primary-heading">
-                        Creative <span class="fw-bold primary-heading-bold">Work</span>
+                        Creative <span class="fw-bold">Work</span>
                     </div>
                     <div class="paragraph mx-auto mt-2">
-                        6+ years of experience in engineering. Innovative and analytical IT engineer with a graduate degree in Information and Communication Engineering, who loves to thrives on solving complex analytical problems, proficient networking and security implementation. 
-                        <br><a href="https://www.linkedin.com/in/abinash-basnet/" > Linkedin </a> &nbsp <a href="https://scholar.google.com/citations?user=PtKNPQYAAAAJ">  Google Scholar </a>
-                        &nbsp<a href="https://www.researchgate.net/profile/Abinash-Basnet/stats"> Researchgate </a>&nbsp <a href="https://github.com/abinashkaji/"> Github </a>
+                        <div id="creative_work">
+                        
                         </div>
-                    <a type="button" class="section-2-button fw-bold">Read More</a>
+                        <div>
+                            <br><a href="https://www.linkedin.com/in/abinash-basnet/" > Linkedin </a> &nbsp <a href="https://scholar.google.com/citations?user=PtKNPQYAAAAJ">  Google Scholar </a>
+                            &nbsp<a href="https://www.researchgate.net/profile/Abinash-Basnet/stats"> Researchgate </a>&nbsp <a href="https://github.com/abinashkaji/"> Github </a>
+                        </div>
+                    </div>
+                    <a type="button" class="section-2-button fw-bold" href="https://www.researchgate.net/profile/Abinash-Basnet">Read More</a>
                 </div>
             </div>
         </section>
-
 
         <!-- SECTION NO 3 -->
         <section class="container-fluid section-3">
@@ -200,7 +158,7 @@
                         <img src="./images/Section-3-image-2.jpg" class="img-fluid sec3-images sec3-img-right" alt="">
                     </div>
                     <div class="section-3-button-right text-lg-start">
-                        <button class="sec3-btn-right text-uppercase fw-bold" onclick="location.href='#'">
+                        <button class="sec3-btn-right text-uppercase fw-bold" onclick="location.href='https://github.com/abinashkaji?tab=repositories'">
                             Read More
                         </button>
                     </div>
@@ -213,21 +171,25 @@
         <!-- SECTION NO 4 -->
         <section class="container-fluid section-4">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="section-4-left text-center text-lg-end pe-0 pe-lg-5">
                         <span class="section-4-heading text__light">I</span>
                         <span class="section-4-heading text__light">Love </span>
-                        <span class="section-4-heading-bold fw-bolder">Learning</span>
+                        <span class="section-4-heading-bold fw-bolder">Engineering  ❤️☸☮</span>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="section-4-right text-center text-lg-start">
                         <div class="sec3-blank"></div>
-                        <div class="sec6-text">
-                            Experience: Engineer, Nepal Telecom, Feb'17-<br>  
-                            EDUCATION: MSc. in Information and Communication Engineering, Jan'16<br>
-                            Achievements: • CompTIA Security+ certified certification • CCNA certification <br>• AWS Cloud Technical Essentials • Completed Linux security and hardening course<br>• ISC2 CC certification • Splunk core certification • IDS/ IPS course • Python automation 
-                            <br>Experience in • Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker,<br> IDS/IPS, Git, Bash scripting, SQL, Python, Matlab, Tableau and many more.
+                        <div class="list_display">
+                            <ul id="sentenceList">
+                               <h2> Abinash Basnet </h2>
+                            <li class="sentence">Experience: <ul> Engineer, Nepal Telecom, Feb'17- </ul></li>  
+                            <li class="sentence">EDUCATION: <ul>MSc. in Information and Communication Engineering, Jan'16</ul></li>
+                            <li class="sentence">Achievements: <ul> • CompTIA Security+ certified certification • CCNA certification • AWS Cloud Technical Essentials • Completed Linux security and hardening course • ISC2 CC certification • Splunk core certification • IDS/ IPS course • Python automation </ul> </li> 
+                            <li class="sentence">Experience in <ul>• Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker, IDS/IPS, Git, Bash scripting, SQL, Python, Matlab, Tableau and many more. </ul></li>
+                            <li class="sentence">In past: <ul>Assistant Lecturer (Jan'14 –Jan'17)</ul> <ul> Researcher (Published some papers in AI and security in IEEE and Springer)</ul> </li>
+                        </ul>
 
                         </div>
                         <div class="section-4-button">
@@ -269,24 +231,26 @@
                         <img src="./images/work-1.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/Automate-Network-troubleshooting-with-Wireshark"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 1</span>
+                                <span class="grid__tag">#Network troubleshooting automation</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 2 -->
                     <div class="grid">
-                        <img src="./images/work-2.jpg" class="img-fluid image-work">
+                        <img src="./images/work-5.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/Network-Traffic-Flow-Statistics-Visualization"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 2</span>
+                                <span class="grid__tag">Network-Traffic-Visualization
+                
+                                    </span>
                             </div>
                         </div>
                     </div>
@@ -295,11 +259,12 @@
                         <img src="./images/work-3.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/Backend-Django-sql-for-flight-management-with-rest-api"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 3</span>
+                                <span class="grid__tag">management-system-rest-api
+                                    </span>
                             </div>
                         </div>
                     </div>
@@ -308,24 +273,24 @@
                         <img src="./images/work-4.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/Flutter_quiz_app"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 4</span>
+                                <span class="grid__tag">Flutter Practice app</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 5 -->
                     <div class="grid">
-                        <img src="./images/work-5.jpg" class="img-fluid image-work">
+                        <img src="./images/work-2.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/New_Website"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 5</span>
+                                <span class="grid__tag">E-Commerce website</span>
                             </div>
                         </div>
                     </div>
@@ -334,30 +299,30 @@
                         <img src="./images/work-6.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/leetcode"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 6</span>
+                                <span class="grid__tag">Leetcode learning app</span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 7 -->
                     <div class="grid">
-                        <img src="./images/work-7.jpg" class="img-fluid image-work">
+                        <img src="./images/work-8.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
-                                <a class="grid__link" target="_blank" href="#"></a>
+                                <a class="grid__link" target="_blank" href="https://github.com/abinashkaji/Shaing-Dinesh"></a>
                                 <p class="grid__author">By Abinash Basnet</p>
                             </div>
                             <div class="mt-auto">
-                                <span class="grid__tag">#Work 7</span>
+                                <span class="grid__tag">Cybersecurity alert reporting automation </span>
                             </div>
                         </div>
                     </div>
                     <!-- Work 8 -->
                     <div class="grid">
-                        <img src="./images/work-8.jpg" class="img-fluid image-work">
+                        <img src="./images/work-7.jpg" class="img-fluid image-work">
                         <div class="grid__body">
                             <div class="relative">
                                 <a class="grid__link" target="_blank" href="#"></a>
@@ -432,7 +397,7 @@
 
             <div class="row mt-5">
                 <div class="section-6-button-see-all text-center">
-                    <button class="sec6-btn-see-all text-uppercase fw-bold" onclick="location.href='#'">See All
+                    <button class="sec6-btn-see-all text-uppercase fw-bold" onclick="location.href='https://github.com/abinashkaji?tab=repositories'">See All
                         Projects</button>
                 </div>
             </div>
@@ -601,10 +566,12 @@
           setTimeout(scrollText, 13000); // 5 second pause
         }
       
-
         scrollText();
+        var creative_work="6+ years of experience in engineering. Innovative and analytical IT engineer with a graduate degree in Information and Communication Engineering, who loves to thrives on solving complex analytical problems, proficient networking and security implementation.    "
         var textToType = "Abinash Basnet, Senior Engineer, Nepal Telecom. EDUCATION: MSc. in Information and Communication Engineering (Jan'16). Achievements: • CompTIA Security+ certification • CCNA certification • AWS Cloud Technical Essentials • Completed Linux security and hardening course • ISC2 CC certification • Splunk core certification • IDS/ IPS course • Python automation Experience in • Multivendor Switches and Router, NMS, cacti, SIEM Splunk, AWS, Linux, RedHat, Docker, IDS/IPS, Tableau, Git, Bash scripting, SQL, Python, Matlab and many more.";
         continuousTypeWriter(textToType);
+        continuouscreative(creative_work);
+
 
         function continuousTypeWriter(textToType) {
             typeWriter(textToType, 0, function() {
@@ -645,6 +612,64 @@
 
         }
 
+                
+        function continuouscreative(textToType) {
+            typeWriter1(textToType, 0, function() {
+                document.getElementById("creative_work").innerHTML="";                
+                continuouscreative(textToType); // Rerun typeWriter when typing animation completes
+            });
+        }        
+
+        function typeWriter1(text, i, typingCallback) {
+            let lbreak=0
+            var typingText = document.getElementById("creative_work");
+            if (i < text.length) {   
+                typingText.innerHTML += text.charAt(i);
+                i++;
+                if (typingText.offsetWidth < typingText.scrollWidth) {
+                    typingText.innerHTML = typingText.innerHTML.slice(0, -1); // Remove the last character
+                    typingText.innerHTML += "<br>"; // Add line break
+                }
+                
+                    setTimeout(function() { typeWriter1(text, i, typingCallback);
+                cursorPosition.style.display = "none";  
+                }, 50);
+
+            } else {
+
+                typingCallback(); // Invoke callback function when typing is complete
+
+            }
+
+        }
+
+        window.onload = function() {
+            var sentences = document.querySelectorAll('.sentence');
+            var index = 0;
+            var intervalId;
+        
+            function showNextSentence() {
+                sentences[index].classList.add('visible');
+                index++;
+                if (index >= sentences.length) {
+                    clearInterval(intervalId);
+                    setTimeout(function() {
+                        sentences.forEach(function(sentence) {
+                            sentence.classList.remove('visible');
+                        });
+                        setTimeout(startAnimation, 1000); // Wait for 30 seconds before starting again
+                    }, 4000); // Wait for 30 seconds before hiding
+                }
+            }
+        
+            function startAnimation() {
+                index = 0;
+                intervalId = setInterval(showNextSentence, 1000); // Display each sentence for 1 second
+            }
+        
+            startAnimation(); // Start the animation
+        };
+        
         
       </script>
 </body>
