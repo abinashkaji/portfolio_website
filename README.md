@@ -3,7 +3,6 @@
 
 A simple portfolio website to showcase your work and projects. <a href="https://https://www.basnetabinash.com.np" target="_blank">Click here to visit</a>
 
-A simple portfolio website to showcase your work and projects. <a href="www.basnetabinash.com.np" target="_blank">Click here to visit</a>
 <div align="center">
   <a href="https://https://www.basnetabinash.com.np" target="_blank"><img alt="basnetabinash.com.np website screenshot" src="./screenshots/Portfolio-Websites.png" /></a>
 
