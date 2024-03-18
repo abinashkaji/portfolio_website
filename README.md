@@ -1,8 +1,13 @@
 
 # My Portfolio Website
 
+<<<<<<< HEAD
 < HEAD>
 A simple portfolio website to showcase your work and projects. <a href="https://https://www.basnetabinash.com.np" target="_blank">Click here to visit</a>
+=======
+<head>
+A simple portfolio website to showcase your work and projects. <a href="www.basnetabinash.com.np" target="_blank">Click here to visit</a>
+>>>>>>> e2c8a59f8c05ad08451f94f35300e9ecde83b48c
 <div align="center">
   <a href="https://https://www.basnetabinash.com.np" target="_blank"><img alt="Demo" src="./screenshots/Portfolio-Websites.png" /></a>
 =======
@@ -42,7 +47,7 @@ Clone down this repository. You will need `git` installed globally on your machi
 
 Run this command to clone the repository: 
 
-</ HEAD>
+</ head>
     git clone https://github.com/muhammadAbinash 17/simple-portfolio-website.git
 
 ## **Show your support**
