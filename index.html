@@ -676,6 +676,14 @@
         return isValid;
     }
 
+    function startAnimations() {
+                index = 0;
+                intervalId = setInterval(showNextSentence, 1000); // Display each sentence for 1 second
+            }
+        
+            startAnimation(); // Start the animation
+        };
+
     function isValidEmail(email) {
         var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
